@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Idol Blog [Dwayne "The Rock" Johnson]</title>
+    <link rel="icon" type="image/x-icon"
+     href="C:\Users\WIS\Documents\Foundation Courses\Semester 3\Web Programming\My Favorite Idol Blog\favicon.ico">
+     <style>
+
+        .banner {
+            width: 100%;
+            height: 70vh;
+            background-image: url(build_bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        body {
+            background-color: #17191a;
+            font: Verdana, sans-serif;
+        }
+
+        h1 {
+            color: gainsboro;
+            font-size: larger;
+        }
+
+        .h2_align {
+            color: gainsboro;
+            font-size: 45px;
+        }
+
+        .h3_align {
+            color: gainsboro;
+        }
+
+        .dj_sing {
+            color: gainsboro;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .blockquote_edit {
+            color: gainsboro;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #181b1c;
+        }
+
+    .navbar img {
+        height: 120px;
+        margin-right: 500px;
+    }
+
+    .navbar nav {
+        display: flex;
+        gap: 80px;
+    }
+
+    .navbar a {
+        color: azure;
+        text-decoration: none;
+        font-size: x-large;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        color: gainsboro;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .dj_large {
+        font-size: xx-large;
+        margin-left: 10px;
+    }
+
+    .align_left {
+        display: flex;
+        text-align: left;
+        padding-left: 20px;
+        line-height: 2.2;
+    }
+
+    .bq_align_left {
+        display: flex;
+        text-align: left;
+        padding-left: 20px;
+        line-height: 1.5;
+        background-color: #181b1c;
+    }
+
+    .image_align {
+        height: 500px;
+        margin-left: 50px;
+        border-radius: 20px;
+    }
+
+    .text {
+        color: gainsboro;
+    }
+
+    .text:hover {
+        text-decoration: underline;
+    }
+
+    table {
+        margin: 0 auto;
+        text-align: left;
+        width: 90%;
+        table-layout: fixed;
+        border-spacing: 0 33px;
+    }
+
+    th {
+        color: gainsboro;
+        text-align: center;
+    }
+
+    th.popular {
+        position: relative;
+    }
+
+    th.awards {
+        position: relative;
+    }
+
+    th.popular::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25%;
+        border-bottom: 5px solid #1d5a81;
+    }
+
+    th.awards::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        border-bottom: 5px solid #1d5a81;
+    }
+
+
+    .rectangle_box {
+        width: 50%;
+        height: 1.5px;
+        background-color: #1d5a81;
+        margin: 0 auto;
+    }
+
+    .td_edit {
+        font-family: 'Times New Roman', Times, serif;
+        color: gainsboro;
+    }
+
+    .description {
+        color: gainsboro;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+
+    .awards_box {
+        color: gainsboro;
+        justify-content: center;
+        width: 300px;
+        height: 120px;
+        background-color: #181b1c;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin: 0;
+        padding: 10px;
+        transition: transform 0.3s; box-shadow: 0.3s;
+    }
+
+    .awards_box_b {
+        color: gainsboro;
+        justify-content: center;
+        width: 450px;
+        height: 150px;
+        background-color: #181b1c;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin: 0;
+        padding: 10px;
+        transition: transform 0.3s; box-shadow: 0.3s;
+    }
+
+    .awards_box_b:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    }
+
+    .awards_box:hover {
+        transform:  translateY(-10px);
+        box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+
+    }
+
+    .awards_box_move {
+        padding-left: 200px;
+    }
+
+    .span_edit_1 {
+        color: gainsboro;
+        padding-left: 150px;
+    }
+
+    .span_edit_2 {
+        color: gainsboro;
+        padding-left: 190px;
+    }
+
+    .span_edit_3 {
+        color: gainsboro;
+        padding-left: 150px;
+    }
+
+    .left_shifted {
+        margin-left: 130px;
+    }
+
+    .audio_align {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marquee_text {
+        color: gainsboro;
+    }
+
+    .footer {
+        margin-top: 150px;
+        width: 100%;
+        padding: 20px 15%;
+        background-color: #181b1c;
+        display: flex;
+    }
+
+    h4 {
+        color: gainsboro;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+
+    footer {
+        color: gainsboro;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+    }
+
+    .col1 {
+        padding-left: 0;
+        margin-left: -200px;
+    }
+
+    .col2 {
+        margin-left: 150px;
+    }
+
+    .col3 {
+        margin-left: 150px;
+    }
+
+    .address_text {
+        color: gainsboro;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div class="navbar">
+    <img src="C:\Users\WIS\Documents\Foundation Courses\Semester 3\Web Programming\My Favorite Idol Blog\bull logo.png" height="120"
+    alt="Logo of The Rock">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Filmography</a>
+        <a href="#">Wrestling</a>
+        <a href="#">Media</a>
+        <a href="#">Movies</a>
+    </nav>
+    </div><br><br>
+
+    <marquee class="marquee_text">
+        Created by Chit Ko Ko<br>
+        Student ID: AIU23101041
+    </marquee>
+
+    <p>Welcome to my block page about <i class="dj_large">
+    <strong>Dwayne <a class="text" href="https://en.wikipedia.org/wiki/Dwayne_Johnson">"The Rock"</a> Johnson</strong></i>
+    </p><br><br><br>
+
+    <table>
+        <tr>
+            <td><h1>Dwayne "The Rock" Johnson -</h1>
+                <p class="align_left">Dwayne Johnson, known as "The Rock," is an American actor, producer, and retired wrestler.
+                    Born on May 2, 1972, Johnson initially gained fame in the World Wrestling Federation
+                   (WWF, now WWE) as a charismatic and highly popular wrestler. He transitioned to Hollywood,
+                    becoming one of the highest-grossing and most recognizable actors, known for his roles in
+                    blockbuster franchises such as "Fast & Furious" and "Jumanji." His larger-than-life persona,
+                    combined with his versatility and work ethic, has made him a beloved figure in both sports and entertainment industries.</p>
+            </td>
+            <td>
+                <image class="image_align" src="004_RAW_04012024RF_52329--62e3139d062f6bea1bac9ec169006feb.jpg"></image>
+            </td>
+        </tr>
+    </table><br><br><br>
+
+    <h2 class="h2_align">Here is a famous quote from Dwayne Johnson:<h2>
+    
+    <blockquote>
+        <p class="bq_align_left">"Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. 
+            Greatness will come. Dream big, stay positive, work hard, and enjoy the journey. 
+            The road to success and greatness is always paved with consistent hard work. Outwork your competition, 
+            be authentic, and above all else, chase your greatness."</p>
+            <p class="blockquote_edit">-Dwayne Johnson</p>
+        
+        </blockquote><br><br>
+    
+    <table>
+        <tr>
+            <th class="popular">Popular Movies</th>
+            <th class="awards">Awards and Acheivements</th>
+        </tr>
+
+        <tr>
+            <td><strong class="td_edit">The Scorpion King (2002)</strong><br>
+                <span class="description">The Scorpion King was a commercial success, grossing
+                approximately $165 million worldwide against a budget of $60 million.
+            </span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box">WWE Triple Crown Champion: Achieved by winning the WWE Championship, Intercontinental Championship, and Tag Team Championship</div></td>
+        </tr>
+        <tr>
+            <td><strong class="td_edit">Jumanji: Welcome to the Jungle (2017)</strong><br>
+                <span class="description">The film's blend of humor, action, and nostalgia made it a box office hit,
+                     grossing over $962 million worldwide.
+            </span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box_b">WWE Championships<br>
+            <ul>
+                <li>8-time WWE Champion</li>
+                <li>2-time WCW/World Champion</li>
+                <li>2-time Intercontinental Champion</li>
+                <li>5-time Tag Team Champion</li>
+            </ul>
+        </div>
+    </td>
+        </tr>
+        <tr>
+            <td><strong class="td_edit">San Andreas (2015)</strong><br>
+                <span class="description">The film showcases Johnson's action-hero persona, grossing over $474 million globally.</span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box">Time 100: Named one of Time magazine's 100 Most Influential People in the World multiple times</div></td>
+        </tr>
+        <tr>
+            <td><strong class="td_edit">Moana (2016)</strong><br>
+                <span class="description">The film was praised for its beautiful animation, catchy music, and engaging story,
+                 grossing over $643 million worldwide.</span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box">Hollywood Walk of Fame: Honored with a star on the Hollywood Walk of Fame (2017)</div></td>
+        </tr>
+        <tr>
+            <td><strong class="td_edit">Rampage (2018)</strong><br>
+                <span class="description"> The film features thrilling monster battles and extensive special effects,
+                grossing approximately $428 million globally.</span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box">Forbes Highest-Paid Actor: Topped Forbes' list of highest-paid actors multiple times (2016, 2019, 2020)</div></td>
+        </tr>
+        <tr>
+            <td><strong class="td_edit">Central Intelligence (2016)</strong><br>
+                <span class="description">The film's mix of humor and action was well-received, earning over $217 million worldwide.</span>
+            </td>
+            <td class="awards_box_move"><div class="awards_box">NAACP Image Awards: Outstanding Actor in a Comedy Series (2017, "Ballers")</div></td>
+        </tr>
+    </table><br>
+
+    <table>
+        <tr>
+            <td><span class="span_edit_1">Watch</span><br><br>
+                <span class="span_edit_2"><bold>Dwayne Johnson</bold></span><br><br>
+                <span class="span_edit_3">In Action</span><br>
+                <hr class="left_shifted" width="10%" size="2">
+            </td>
+
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U8XH3W0cMss?si=Ilqsl6-nmBqVjiZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2QKg5SZ_35I?si=EFbkglEPhK4MArLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yftHosO0eUo?si=yUdruOzsGS0QnLS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+    </table>
+
+    <h3 class="dj_sing">Listen to Dwayne Johnson Singing You're Welcome in Moana (2016)</h3><br>
+
+    <div class="audio_align">
+        <audio controls>
+        <source src="Dwayne Johnson - You re Welcome (From  Moana _Sing-Along).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="footer">
+        <div class="col1">
+            <h4>Website Information</h4>
+            <footer>Created on Saturday, 6th July, 2024 by Chit Ko Ko</footer>
+            <footer>Student ID: AIU23101041</footer>
+            <footer>FCC135: Introduction to Web Programming</footer>
+            <footer>© 2024 My Favorite Idol Blog. All Rights Reserved</footer>
+
+        </div>
+        <div class="col2">
+            <h4>Contact to my Email</h4>
+            <form>
+                <input type="email" name="email" value="yourEmail@gmail.com">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="col3">
+            <h4>Address</h4>
+            <span class="address_text">Jln Tun Razak, Bandar Alor Setar, 05200 Alor Setar, Kedah</span><br>
+            <span class="address_text">Email: <a href="#" style="color: gainsboro;">chitkoko.ali@gmail.com</a></span><br>
+            <span class="address_text">Phone Number: +601112476299</span>
+        </div>
+    </div>
+
+</html>
